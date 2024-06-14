@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: #333;
+    background-color: #fff;
+    line-height: 1.6;
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color:#333;
+    text-decoration: none;
+}
+
+h1,h2{
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 3rem;
+}
+
+p{
+    margin: 1.6rem 0;
+    font-size: 1.7rem
+}
+
+img{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* ---------------blog--------------- */
+
+.resim1.blog{
+   background-image: url(../image/havuz2.jpeg);
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: bottom;
+   width: 100%;
+   height: 50vh;
+   position: relative;
+}
+
+.resim1.blog::before{
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+
+.lorem1.blog{
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+.lorem1.blog h1{
+  font-size: 5rem;
+}
+
+.title{
+   padding: 2rem;
+}
+
+.blog_title{
+   display: flex;
+   margin: 0;
+   height: 40rem;
+   padding-bottom: 2rem;
+}
+
+.resim2.blog1{
+   background-image: url(../image/title3.jpeg);
+   background-position: center;
+   background-size: cover;
+   flex-basis: 50%;
+}
+
+.lorem2.blog{
+   background-color: #7a7979;
+   flex-basis: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   padding: 3rem;
+   color: var(--light);
+}
+
+.resim2.blog2{
+   background-image: url(../image/title1.webp);
+   background-position: center;
+   background-size: cover;
+   flex-basis: 50%;
+}
+
+.resim2.blog3{
+   background-image: url(../image/title.jpeg);
+   background-position: center;
+   background-size: cover;
+   flex-basis: 50%;
+}
+
+
+/* ---------------/blog--------------- */
+
+#scroll_i{
+   position: fixed;
+   bottom: 2rem;
+   right: 2rem;
+   z-index: 3;
+   color: #fff;
+   background-color: #333;
+   opacity: .5;
+   border-radius: 50%;
+   padding: .5rem 1rem;
+}
+
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .9;
+    z-index: 2;
+}
+
+.logo{
+    margin: 2rem 4rem;
+
+}
+
+.links{
+    display: flex;
+    /* margin-right: 40px;
+    margin-left: 40px; */
+    margin: 2rem 4rem;
+}
+
+.links a{
+    color: var(--light);
+    margin: 2rem 1.5rem;
+}
+
+.link{
+    transition: all .4s;
+}
+
+.link:hover{
+    opacity: .4;
+    border-bottom: 4px solid var(--warning);
+}
+
+ .resim1{
+    background-image: url(../image/hotel3.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+ }
+
+ /* resme koyuluk verip daha arka plana alır */
+
+ .resim1::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+ }
+
+ .lorem1{
+    border-radius: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+ }
+
+ .lorem1 h1{
+    font-size: 5rem;
+ }
+ 
+ .lorem1 p{
+    font-size: 2rem;
+    
+ }
+
+ .lorem1 button{
+    padding: 1.2rem 1.8rem;
+ }
+
+/* special */ 
+
+ .items{
+    display: flex;
+    justify-content: space-evenly;
+    
+ }
+
+ .item{
+    padding: 2rem;
+    margin: 2rem 0;
+ }
+ 
+ .item i{
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: 3rem;
+    padding: 1rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+ }
+
+ .item h1{
+    font-size: 2.5rem;
+ }
+
+ .item p{
+    font-size: 1.4rem;
+ }
+
+ .tanitim1{
+    display: flex;
+    margin: 0;
+    height: 40rem;
+ }
+
+ .resim2{
+    background-image: url(../image/room1.webp);
+    background-position: center;
+    background-size: cover;
+    flex-basis: 50%;
+ }
+
+ .lorem2{
+    background-color: #7a7979;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+ }
+
+ .lorem2 h1{
+    color: var(--light);
+    font-size: 4rem;
+ }
+
+ .lorem2 p{
+    color: var(--light);
+    font-size: 1.6rem;
+ }
+
+ /* galeriiiiiii */
+
+ .gallery{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+ }
+
+ .galeri_lorem{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .galeri_lorem h1{
+    font-size: 4.5rem;
+    line-height: 1.5;
+ }
+
+ .galeri_lorem p{
+    font-size: 1.8rem;
+    text-align: center;
+ }
+  
+ .col{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 3rem;
+ }
+
+ .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+ }
+
+ .row img{
+    width: 25%;
+    height: 25%;
+    background-position: center;
+    background-size: cover;
+    padding: .5rem;
+ }
+ 
+
+ .row img:hover{
+    cursor: pointer;
+    opacity: .8;
+ }
+
+ .tanitim2{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    height: 40rem;
+ }
+
+ .resim3{
+    background-image: url(../image/hotel2.webp);
+    background-position: center;
+    background-size: cover;
+    flex-basis: 50%;
+ }
+
+ .lorem3{
+    background-color: #7a7979;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3rem;
+ }
+
+ .lorem3 h1{
+    color: var(--light);
+    font-size: 3.4rem;
+ }
+
+ .lorem3 p{
+    color: var(--light);
+    font-size: 1.6rem;
+ }
+
+ .room_card{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .lorem4{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .lorem4 h1{
+    font-size: 4.5rem;
+    line-height: 1.5;
+ }
+
+ .lorem4 p{
+    font-size: 1.8rem;
+    text-align: center;
+ }
+
+ .cards{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+ }
+
+ .card{
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .card img{
+    background-size: cover;
+    background-position: center;
+ }
+
+ .info{
+   margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+ }
+
+ .info h1{
+    margin-top: 1.6rem;
+ }
+
+ .info p{
+    margin-top: .5rem;
+ }
+
+ .managers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ }
+ 
+ .lorem5{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+ }
+
+ .lorem5 h1{
+    font-size: 4.5rem;
+    line-height: 1.5;
+ }
+
+ .lorem5 p{
+    font-size: 1.8rem;
+ }
+
+ .fotos{
+    display: flex;
+    justify-content: center;
+ }
+
+ .manager{
+    margin: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .manager img{
+    /* width: 36rem;
+    height: 24rem; */
+    background-position: top;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: opacity .2s;
+ }
+
+ .manager img:hover{
+    opacity: .8;
+ }
+ 
+ .manager h1{
+    margin-top: 1.6rem;
+ }
+
+ .manager p{
+    margin-top: .5rem;
+ }
+ 
+ .contact{
+    display: flex;
+    height: 40rem;
+ }
+
+ .resim4{
+    background-image: url(../image/contact1.webp);
+    background-position: center;
+    background-size: cover;
+    flex-basis: 50%;
+ }
+
+ .bilgiler{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 50%;
+    padding: 4rem;
+ }
+
+ .bilgiler h1{
+    font-size: 3.4rem;
+    margin-top: 2rem;
+ }
+ 
+
+ .contact_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1.6rem 0;
+ } 
+
+ .form_control{
+    margin-bottom: 2rem;
+ }
+
+ .form_control input{
+    width: 100%;
+    height: 3.5rem;
+    border: 0;
+    border-radius: .4rem;
+ }
+ 
+ .form_control input:visited{
+    background-color: #e7e7e7;
+ }
+
+ .form_control button{
+   width: 100%;
+    height: 3rem;
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--primary);
+    font-size: 1.6rem;
+    margin-top: 1rem;
+ }
+
+
+ .footer{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ } 
+
+ .footer_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+ }
+
+ .footer_link a{
+    margin: 0 1rem; 
+}
+
+ .footer_link a:hover{
+    opacity: .8;
+}
+
+ .footer_link a i{
+    color: var(--warning);
+ }
+
+ .footer p{
+    margin: 0px;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+ }
+
+ @media (max-width:790px) {
+   html{
+      font-size: 9px;
+   }
+   
+} 
+
+ @media (max-width:710px) {
+   html{
+      font-size: 8px;
+   }
+
+   .resim1.blog{
+      height: 45vh;
+   }
+
+} 
+
+@media (max-width:625px){
+
+   html{
+      font-size: 8px;
+   }
+   
+   .resim1.blog{
+      height: 40vh;
+   }
+   
+   .blog_title{
+      flex-direction: column;
+      height: 70rem;
+   }
+
+   .resim2.blog1{
+      flex-basis: 100%;
+      background-position: center;
+      background-size: cover;
+   }
+   
+   .resim2.blog2{
+      flex-basis: 100%;
+      background-position: center;
+      background-size: cover;
+   }
+   
+   .resim2.blog3{
+      flex-basis: 100%;
+      background-position: center;
+      background-size: cover;
+   }
+   
+   .navbar{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .links{
+      margin-top: 0;
+   }
+   
+   .items{
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .item{
+      width: 100%;
+      margin: 0;
+   }
+
+   .tanitim1{
+      flex-direction: column;
+      height: 70rem;
+   }
+
+   .resim2{
+      flex-basis: 100%;
+      background-position: center;
+      background-size: cover;
+   }
+
+   .lorem2{
+      flex-basis: 50%;      
+   }
+
+   .col{
+      flex-direction: row;
+      justify-content: center;
+   }
+   
+   .row{
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   .row img{
+      width: 100%;
+      height: 100%;
+   }
+
+   .tanitim2{
+      flex-direction: column;
+      height: 70rem;
+   }
+
+   .resim3{
+      flex-basis: 100%;
+      background-position: center;
+      background-size: cover;
+   }
+
+   .lorem3{
+      flex-basis: 50%;      
+   }
+
+   .cards{
+      flex-direction: column;
+      align-items: center;
+   }
+
+
+   .fotos{
+      flex-direction: column;
+   }
+
+   .contact{
+      flex-direction: column;
+      height: 80rem;
+   }
+
+   .resim4{
+      flex-basis: 100%;
+   }
+
+   .bilgiler{
+      flex-basis: 50%;
+   }
+
+}
+
+@media (max-width:500px) {
+   html{
+      font-size: 7px;
+   }
+   
+}
